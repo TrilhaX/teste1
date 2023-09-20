@@ -1,0 +1,9 @@
+local key = scriptkey
+local hwid = "45FD94ED-6498-43F4-9354-245724565503"
+
+local GetHwid = game:GetService("RbxAnalyticsService"):GetClientId()
+
+if key == scriptkey and GetHwid == hwid then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/laylasthug/PunchSimulator/1f40ce4d7699f2cf76939db9af05c34bed4af2ff/main"))()
+    print("Whitelisted")
+end
